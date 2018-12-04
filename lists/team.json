@@ -30,15 +30,6 @@
 	"location": "The Netherlands"
       },
       {
-        "img": "../static/img/team/edwin.jpg",
-        "name": "Edwin - EdwinB89",
-        "role": "Front-end Developer",
-        "occupation": "Front-end developer",
-        "github": "https://github.com/EdwinB89",
-        "twitter": "",
-	"location": "The Netherlands"
-      },
-      {
         "img": "../static/img/team/sourcedexter.jpg",
         "name": "Akshay - Sourcedexter",
         "role": "Bot Dev & India Marketing Lead",
@@ -48,7 +39,7 @@
 	"location": "Bangalore, India"
       },
       {
-        "img": "../static/img/team/verge.jpg",
+        "img": "../static/img/team/swen.png",
         "name": "Swen",
         "role": "Product Developer",
         "occupation": "Full Stack Senior Web Developer",
@@ -139,15 +130,6 @@
 	"location": "Rotterdam, The Netherlands"
       },
       {
-        "img": "../static/img/team/chris.png",
-        "name": "Chris",
-        "role": "Project & Outreach",
-        "occupation": "Operational Manager",
-        "github": "",
-        "twitter": "https://twitter.com/Chris_XVG",
-	"location": "Amsterdam, The Netherlands"
-      },
-      {
         "img": "../static/img/team/kris.jpg",
         "name": "Kris Chase",
         "role": "Marketing & Operations Advisor",
@@ -184,15 +166,6 @@
 	"location": "USA"
       },
       {
-        "img": "../static/img/team/verge.jpg",
-        "name": "ddefying",
-        "role": "Technical Advisor",
-        "occupation": "Corporate Transaction Attorney",
-        "github": "",
-        "twitter": "https://twitter.com/cheetosologist",
-	"location": "California, USA"
-      },
-      {
         "img": "../static/img/team/jeffs1.png",
         "name": "Jeff",
         "role": "Technical Advisor",
@@ -202,7 +175,7 @@
 	"location": "Texas, USA"
       },
       {
-        "img": "../static/img/team/verge.jpg",
+        "img": "../static/img/team/mark.png",
         "name": "Mark",
         "role": "International Marketing Advisor",
         "occupation": "Finance / Credit Specialist",
@@ -220,7 +193,7 @@
 	"location": "Leusden, The Netherlands"
       },
       {
-        "img": "../static/img/team/verge.jpg",
+        "img": "../static/img/team/lloyd.png",
         "name": "Lloyd - Swizzlesticks",
         "role": "Technical Writer & Advisor",
         "occupation": "Owner/CIO - Managed Services Provider",
@@ -317,7 +290,7 @@
       {
         "img": "../static/img/team/verge.jpg",
         "name": "Alexandre",
-        "role": "Community Relations Specialist",
+        "role": "Content Marketing Manager",
         "occupation": "Corporate English Teacher / Editor",
         "github": "",
         "twitter": "https://twitter.com/xvgninja",
@@ -340,6 +313,24 @@
         "github": "",
         "twitter": "https://twitter.com/Verge_forums",
 	"location": "The Netherlands"
+      },
+      {
+        "img": "../static/img/team/verge.jpg",
+        "name": "NiteShadow",
+        "role": "IT/Content Marketing Strategist",
+        "occupation": "",
+        "github": "",
+        "twitter": "https://twitter.com/NiteShadowXVG",
+	"location": "New York, USA"
+      },
+      {
+        "img": "../static/img/team/verge.jpg",
+        "name": "Alchemi",
+        "role": "Multimedia Designer",
+        "occupation": "",
+        "github": "",
+        "twitter": "",
+	"location": "New York, USA"
       }
     ]
   },

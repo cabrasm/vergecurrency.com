@@ -43,6 +43,7 @@ class LanguageSwitcher extends React.Component {
         >
           {languages}
         </select>
+        <span className="arrow" />
       </div>
     );
   }

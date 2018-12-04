@@ -83,21 +83,7 @@
                 "travel": false,
                 "education": false
             }
-        },
-        {
-            "title": "Verge Mines",
-            "img": "../static/img/vendors/latest/vergemines.png",
-            "link": "vergemines.com",
-            "url": "https://www.vergemines.com/",
-            "categories": {
-                "retail": false,
-                "foodAndBev": false,
-                "service": false,
-                "entertainment": true,
-                "travel": false,
-                "education": false
-            }
-        },        
+        },       
         {
             "title": "DIOXYME",
             "img": "../static/img/vendors/latest/dioxyme.png",
@@ -225,14 +211,28 @@
             }
         },
         {
-            "title": "BIM Trainings",
-            "img": "../static/img/vendors/latest/blm.jpg",
-            "link": "bimtrainings.com/",
-            "url": "http://bimtrainings.com/",
+            "title": "247Bits",
+            "img": "../static/img/vendors/latest/247bits.png",
+            "link": "247bits.com",
+            "url": "https://www.247bits.com/",
+            "categories": {
+                "retail": true,
+                "foodAndBev": false,
+                "service": true,
+                "entertainment": false,
+                "travel": false,
+                "education": true
+            }
+        },
+        {
+            "title": "Anna Freya Voice",
+            "img": "../static/img/vendors/latest/annafreyavoice.png",
+            "link": "anna-freya-voice.com",
+            "url": "https://www.anna-freya-voice.com/",
             "categories": {
                 "retail": false,
                 "foodAndBev": false,
-                "service": false,
+                "service": true,
                 "entertainment": false,
                 "travel": false,
                 "education": true
@@ -294,6 +294,20 @@
                 "education": false
             }
         },
+        {
+            "title": "BIM Trainings",
+            "img": "../static/img/vendors/latest/blm.jpg",
+            "link": "bimtrainings.com/",
+            "url": "http://bimtrainings.com/",
+            "categories": {
+                "retail": false,
+                "foodAndBev": false,
+                "service": false,
+                "entertainment": false,
+                "travel": false,
+                "education": true
+            }
+        },        
         {
             "title": "Evolution Host",
             "img": "../static/img/vendors/latest/evolutionhost.png",
@@ -435,20 +449,6 @@
             }
         },
         {
-            "title": "Souilmi",
-            "img": "../static/img/vendors/latest/souilmi.png",
-            "link": "souilmi.com",
-            "url": "https://www.souilmi.com/",
-            "categories": {
-                "retail": true,
-                "foodAndBev": false,
-                "service": false,
-                "entertainment": false,
-                "travel": false,
-                "education": false
-            }
-        },
-        {
             "title": "Boatsters",
             "img": "../static/img/vendors/latest/boatsters.png",
             "link": "boatsters.com",
@@ -484,20 +484,6 @@
             "categories": {
                 "retail": true,
                 "foodAndBev": false,
-                "service": false,
-                "entertainment": false,
-                "travel": false,
-                "education": false
-            }
-        },
-        {
-            "title": "Incredebites",
-            "img": "../static/img/vendors/latest/incredebites.png",
-            "link": "Incredebites Burbank",
-            "url": "https://www.yelp.com/biz/incredebites-burbank",
-            "categories": {
-                "retail": false,
-                "foodAndBev": true,
                 "service": false,
                 "entertainment": false,
                 "travel": false,
