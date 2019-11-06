@@ -2,14 +2,7 @@ import Link from 'next/link';
 import LazyLoad from 'react-lazyload';
 import Head from 'next/head';
 
-import Layout from '../components/Layout';
-import { HomeExchanges } from '../components/Exchanges';
-import Cointicker from '../components/Cointicker';
-import { Mentions } from '../components/Mentions';
-import { HomeVendors } from '../components/Vendors';
-import Wallets from '../components/Wallets';
-import WalletsBtn from '../components/WalletsBtn';
-import { PartnerInfo } from '../components/Partners';
+import { translate, Interpolate } from 'react-i18next';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {
@@ -22,9 +15,19 @@ import {
   faDiscord,
 } from '@fortawesome/fontawesome-free-brands';
 
+import { HomeExchanges } from '../components/Exchanges';
+import Cointicker from '../components/Cointicker';
+//import Coinchart from '../components/Coinchart';
+import { Mentions } from '../components/Mentions';
+import { HomeVendors } from '../components/Vendors';
+import Wallets from '../components/Wallets';
+import WalletsBtn from '../components/WalletsBtn';
+import { PartnerInfo } from '../components/Partners';
+import { SponsorsInfo } from '../components/Sponsors';
+
 import 'moment-timezone';
 
-import { translate, Interpolate } from 'react-i18next';
+import Layout from '../components/Layout';
 import i18n from '../i18n';
 import CurrentYearRoadmap from './CurrentYearRoadmap';
 
@@ -40,7 +43,7 @@ function Home(props) {
               'Verge - Secure and anonymous cryptocurrency, built for everyday use - VergeCurrency.com',
           })}
         </title>
-        <link rel='image_src' href='/static/img/press/logo/verge-logo.png' />        
+        <link rel="image_src" href="/static/img/press/logo/verge-logo.png" />
       </Head>
       <div className="home">
         <div className="ribbon">
@@ -64,9 +67,9 @@ function Home(props) {
                     })}
                   </p>
                   <WalletsBtn />
-                  <Link href="/get-started" prefetch>
+                  <Link href="/get-verge" prefetch>
                     <a
-                      href="/get-started"
+                      href="/get-verge"
                       className="btn btn-secondary"
                       name="Get Started with Verge"
                     >
@@ -76,14 +79,16 @@ function Home(props) {
                     </a>
                   </Link>
                   <p className="blackpaper">
-                    Read the{' '}
+                    Read the
+                    {' '}
                     <a
-                      href="/static/blackpaper/Verge-Anonymity-Centric-CryptoCurrency.pdf"
+                      href="/static/blackpaper/verge-blackpaper-v5.0.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <i>Blackpaper</i>
-                    </a>{' '}
+                    </a>
+                    {' '}
                     of Verge Currency
                   </p>
                 </div>
@@ -238,7 +243,7 @@ function Home(props) {
                       <p>
                         {t('home:benefits.benefit_3.text', {
                           defaultvalue:
-                            'Low fees, quick transactions, high volume in circulation, multiplatform support, Wraith Protocol are the ingredients that make Verge perfectly positioned for mass adoption.',
+                            'Low fees, quick transactions, high volume in circulation, and multiplatform support are the ingredients that make Verge perfectly positioned for mass adoption.',
                         })}
                       </p>
                     </div>
@@ -249,14 +254,7 @@ function Home(props) {
                         })}
                       </h6>
                       <p>
-                        {t('common:wraith.text1', {
-                          defaultvalue:
-                            'Wraith Protocol is a technology upgrade package that enables our users to be able to send and receive payments privately across our blockchain by enabling stealth addressing services.',
-                        })}{' '}
-                        {t('common:wraith.text2', {
-                          defaultvalue:
-                            'Additionally this update removes our QT wallet users off of clearnet and migrates everyone to SSL enabled Tor.',
-                        })}
+                        {('Dual-Key Stealth Addressing and Ring Confidential Transactions(in development) enable our users to be able to send and receive payments safely and privately.')}
                       </p>
                     </div>
                   </div>
@@ -273,12 +271,12 @@ function Home(props) {
                 <div className="col-sm-5 col-md-4 col-lg-3 hidden-xs">
                   <div
                     className={
-                      'hidden-xs benefits--' +
-                      (i18n.language == 'ar' ||
-                      i18n.language == 'fa' ||
-                      i18n.language == 'ku'
-                        ? 'imgsrtl'
-                        : 'imgs')
+                      `hidden-xs benefits--${
+                        i18n.language === 'ar'
+                        || i18n.language === 'fa'
+                        || i18n.language === 'ku'
+                          ? 'imgsrtl'
+                          : 'imgs'}`
                     }
                   >
                     <LazyLoad height={430}>
@@ -306,7 +304,7 @@ function Home(props) {
               <div className="row center-xs pt-large pb-large">
                 <div className="col-xs-9 col-sm-10 center-xs">
                   <div className="row center-xs start-md">
-                    <div className="col-xs-12 col-lg-10">
+                    <div className="col-xs-12 col-lg-12">
                       <div className="start-sm pb-small">
                         <h6>
                           <Link href="/wallets">
@@ -375,6 +373,8 @@ function Home(props) {
 
             <PartnerInfo t={t} />
 
+            <SponsorsInfo t={t} />
+
             <div className="row center-xs pt-large pb">
               <div className="col-xs-10 start-xs exchanges bb">
                 <div className="start-sm pb-small">
@@ -402,8 +402,30 @@ function Home(props) {
                 </div>
 
                 <HomeExchanges />
-
-                <Cointicker />
+                    <span className="hidden-xs">
+                      <br />
+                    </span>
+                  <h3>
+                    {t('home:getverge.text6', {
+                      defaultValue:
+                        'Exchange Disclaimer:',
+                    })}{' '}
+                    <span className="hidden-xs">
+                      <br />
+                    </span>
+                  </h3>
+                  <h4>
+                    {t('home:getverge.text7', {
+                      defaultValue: <i>Verge Currency provides the exchange information listed herein for informational purposes only. Verge Currency is not liable for any third-party transactions between cryptocurrency purchasers or sellers. Buyers and investors are to seek independent financial advice from a professional. Do your own research.</i>,
+                    })}
+                  </h4>
+                    <span className="hidden-xs">
+                      <br />
+                    </span>
+                {/*<Coinchart />*/}
+                    {/*<span className="hidden-xs">
+                      <br />
+                    </span>*/}
               </div>
               <div className="col-xs-10 center-xs end-sm pt-small">
                 <h6>
@@ -481,12 +503,12 @@ function Home(props) {
                     <LazyLoad height={375}>
                       <img
                         className={
-                          'vendors--' +
-                          (i18n.language == 'ar' ||
-                          i18n.language == 'fa' ||
-                          i18n.language == 'ku'
+                          `vendors--${
+                          i18n.language === 'ar' ||
+                          i18n.language === 'fa' ||
+                          i18n.language === 'ku'
                             ? 'imgrtl'
-                            : 'img')
+                            : 'img'}`
                         }
                         src="../static/img/vendors/vendor-story.png"
                         srcSet="
@@ -593,6 +615,7 @@ function Home(props) {
                               rel="noopener noreferrer"
                               className="social__link social__link--facebook"
                               name="Facebook link"
+                              title="Facebook"
                             >
                               <FontAwesomeIcon icon={faFacebook} size="2x" />
                             </a>
@@ -606,6 +629,7 @@ function Home(props) {
                               rel="noopener noreferrer"
                               className="social__link social__link--github"
                               name="GitHub link"
+                              title="GitHub"
                             >
                               <FontAwesomeIcon icon={faGithub} size="2x" />
                             </a>
@@ -619,19 +643,21 @@ function Home(props) {
                               rel="noopener noreferrer"
                               className="social__link social__link--telegram"
                               name="Telegram link"
+                              title="Telegram"
                             >
                               <FontAwesomeIcon icon={faTelegram} size="2x" />
                             </a>
                           </Link>
                         </div>
                         <div className="pt-xs social__icon">
-                          <Link href="https://www.youtube.com/channel/UCv59uw_WhHB2VxbBs0LPeeQ">
+                          <Link href="https://www.youtube.com/vergecurrency">
                             <a
-                              href="https://www.youtube.com/channel/UCv59uw_WhHB2VxbBs0LPeeQ"
+                              href="https://www.youtube.com/vergecurrency"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="social__link social__link--youtube"
                               name="Youtube link"
+                              title="Youtube"
                             >
                               <FontAwesomeIcon icon={faYoutube} size="2x" />
                             </a>
@@ -645,6 +671,7 @@ function Home(props) {
                               rel="noopener noreferrer"
                               className="social__link social__link--reddit"
                               name="Reddit link"
+                              title="Reddit"
                             >
                               <FontAwesomeIcon icon={faReddit} size="2x" />
                             </a>
@@ -658,6 +685,7 @@ function Home(props) {
                               rel="noopener noreferrer"
                               className="social__link social__link--twitter"
                               name="Twitter link"
+                              title="Twitter"
                             >
                               <FontAwesomeIcon icon={faTwitter} size="2x" />
                             </a>
@@ -671,6 +699,7 @@ function Home(props) {
                               rel="noopener noreferrer"
                               className="social__link social__link--discord"
                               name="Discord link"
+                              title="Discord"
                             >
                               <FontAwesomeIcon icon={faDiscord} size="2x" />
                             </a>

@@ -1,11 +1,46 @@
 {
   "mentions": [
     {
-      "url": "http://www.dailymail.co.uk/sciencetech/article-5638575/Cryptocurrencies-price-lift-Pornhub-starts-accepting-Verge-payment.html",
-      "img": "../static/img/mentioned-in/DailyMail.png",
+      "url": "https://www.cryptonewsz.com/verge-price-analysis-verge-xvg-hits-the-bears-aiding-potential-investors-to-go-long/28217/",
+      "img": "../static/img/mentioned-in/CryptoNewsZ.png",
       "width": "100",
-      "title": "Cryptocurrencies see price lift after Pornhub starts accepting Verge as payment",
-      "date": "2018-04-20"
+      "title": "Verge Price Analysis: Verge (XVG) Hits The Bears, Aiding Potential Investors To Go Long",
+      "date": "2019-06-26"
+    },
+    {
+      "url": "https://www.wired.com/story/pornhub-verge-cryptocurrency/",
+      "img": "../static/img/mentioned-in/Wired.png",
+      "width": "100",
+      "title": "The World's Biggest Porn Site Now Accepts Cryptocurrency",
+      "date": "2018-04-17"
+    },
+    {
+      "url": "https://www.badcredit.org/news/verge-cryptocurrency-enables-secure-anonymous-online-transactions/",
+      "img": "../static/img/mentioned-in/BadCredit.png",
+      "width": "100",
+      "title": "Verge Cryptocurrency Offers Users Financial Freedom in Everyday Online Transactions Through Security and Anonymity",
+      "date": "2019-03-28"
+    },
+    {
+      "url": "https://www.cardrates.com/news/verge-is-a-crypto-that-prioritizes-privacy/",
+      "img": "../static/img/mentioned-in/cardrates.png",
+      "width": "100",
+      "title": "Verge: The Community-Driven Cryptocurrency that Prioritizes Anonymity and Privacy",
+      "date": "2019-02-05"
+    },
+    {
+      "url": "http://fortune.com/2018/04/17/verge-pornhub-mindgeek-cryptocurrency-brazzers/",
+      "img": "../static/img/mentioned-in/Fortune.png",
+      "width": "100",
+      "title": "Porn Partnership Pumps This Cryptocurrency Up 22%",
+      "date": "2018-04-18"
+    },
+    {
+      "url": "https://www.forbes.com/sites/curtissilver/2018/04/17/pornhub-partners-with-verge-cryptocurrency-shifting-the-future-of-porn-payments/#7b7de7f624b5",
+      "img": "../static/img/mentioned-in/Forbes.png",
+      "width": "100",
+      "title": "Pornhub Partners With Verge Cryptocurrency, Shifting The Future Of Porn Payments",
+      "date": "2018-04-17"
     },
     {
       "url": "https://sputniknews.com/business/201804201063750396-pay-play-verge-pornhub-cryptocurrencies/",
@@ -15,17 +50,24 @@
       "date": "2018-04-20"
     },
     {
-      "url": "https://cryptovest.com/news/verge-xvg-gains-gaming-partnership-team-not-worried-about-price-drop/",
-      "img": "../static/img/mentioned-in/Cryptovest.png",
+      "url": "http://www.dailymail.co.uk/sciencetech/article-5638575/Cryptocurrencies-price-lift-Pornhub-starts-accepting-Verge-payment.html",
+      "img": "../static/img/mentioned-in/DailyMail.png",
       "width": "100",
-      "title": "Verge (XVG) Gains Gaming Partnership, Team Not Worried About Price Drop",
-      "date": "2018-04-19"
+      "title": "Cryptocurrencies see price lift after Pornhub starts accepting Verge as payment",
+      "date": "2018-04-20"
     },
     {
       "url": "https://www.bloomberg.com/news/audio/2018-04-18/pornhub-s-users-can-now-mask-payments-with-verge-crypto-valo",
       "img": "../static/img/mentioned-in/Bloomberg.png",
       "width": "100",
       "title": "Pornhub’s Users Can Now Mask Payments With Verge Crypto: Valo",
+      "date": "2018-04-18"
+    },
+    {
+      "url": "https://www.vice.com/en_ca/article/43bp59/pornhub-now-accepts-cryptocurrency",
+      "img": "../static/img/mentioned-in/Vice.png",
+      "width": "100",
+      "title": "PornHub Now Accepts Cryptocurrency",
       "date": "2018-04-18"
     },
     {
@@ -43,46 +85,11 @@
       "date": "2018-04-18"
     },
     {
-      "url": "https://www.vice.com/en_ca/article/43bp59/pornhub-now-accepts-cryptocurrency",
-      "img": "../static/img/mentioned-in/Vice.png",
-      "width": "100",
-      "title": "PornHub Now Accepts Cryptocurrency",
-      "date": "2018-04-18"
-    },
-    {
-      "url": "https://www.maxim.com/news/pornhub-now-accepting-cryptocurrency-4",
-      "img": "../static/img/mentioned-in/Maxim.png",
-      "width": "100",
-      "title": "Pornhub Is Now Accepting Cryptocurrency, And Here’s Why That’s A Big Deal",
-      "date": "2018-04-18"
-    },
-    {
       "url": "http://www.gizmodo.co.uk/2018/04/pornhub-accepts-cryptocurrency-now/",
       "img": "../static/img/mentioned-in/Gizmodo-uk.png",
       "width": "100",
       "title": "Pornhub Accepts Cryptocurrency Now",
       "date": "2018-04-18"
-    },
-    {
-      "url": "http://fortune.com/2018/04/17/verge-pornhub-mindgeek-cryptocurrency-brazzers/",
-      "img": "../static/img/mentioned-in/Fortune.png",
-      "width": "100",
-      "title": "Porn Partnership Pumps This Cryptocurrency Up 22%",
-      "date": "2018-04-18"
-    },
-    {
-      "url": "https://www.forbes.com/sites/curtissilver/2018/04/17/pornhub-partners-with-verge-cryptocurrency-shifting-the-future-of-porn-payments/#7b7de7f624b5",
-      "img": "../static/img/mentioned-in/Forbes.png",
-      "width": "100",
-      "title": "Pornhub Partners With Verge Cryptocurrency, Shifting The Future Of Porn Payments",
-      "date": "2018-04-17"
-    },
-    {
-      "url": "https://www.wired.com/story/pornhub-verge-cryptocurrency/",
-      "img": "../static/img/mentioned-in/Wired.png",
-      "width": "100",
-      "title": "The World's Biggest Porn Site Now Accepts Cryptocurrency",
-      "date": "2018-04-17"
     },
     {
       "url": "https://www.cnet.com/news/now-you-can-buy-a-pornhub-subscription-with-cryptocurrency/",
@@ -99,7 +106,7 @@
       "date": "2018-04-17"
     },
     {
-      "url": "http://www.businessinsider.com/pornhub-begins-accepting-cryptocurrency-verge-4",
+      "url": "https://www.businessinsider.com/pornhub-begins-accepting-cryptocurrency-verge-2018-4",
       "img": "../static/img/mentioned-in/BusinessInsider.png",
       "width": "100",
       "title": "The biggest porn site in the world is now accepting a 'privacy-focused' cryptocurrency called Verge",

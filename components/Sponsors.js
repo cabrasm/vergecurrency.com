@@ -1,54 +1,60 @@
-import Link from 'next/link';
-import LazyLoad from 'react-lazyload';
+const sponsors = [
+    {
+        href: "https://www.jetbrains.com/",
+        logo: "/static/img/sponsors/jetbrains.png",
+        alt: "jetbrains"
+    },
+    {
+        href: "https://go-trex.com/",
+        logo: "/static/img/sponsors/gotrex.png",
+        alt: "go trex"
+    },
+    {
+        href: "https://shelterblue.com/",
+        logo: "/static/img/sponsors/shelterblue.png",
+        alt: "shelter blue"
+    },
+    {
+        href: "https://www.clothingric.com/",
+        logo: "/static/img/sponsors/clothingric.png",
+        alt: "clothing ric"
+    },
+    {
+        href: "https://blockchainbusinessmagazine.com/",
+        logo: "/static/img/sponsors/bbm.png",
+        alt: "blockchain business magazine"
+    },
+    {
+        href: "https://nownodes.io/",
+        logo: "/static/img/sponsors/nownodes.png",
+        alt: "now nodes"
+    }
+]
 
-const sponsorLocale = require('../lists/sponsors').sponsors;
-
-export const Sponsors = () => {
-  const Sponsors = sponsorLocale.map(s => (
-    <div
-      className="col-xs-4 col-sm-3 center-xs pb-xs sponsors__single"
-      key={s.title}
-      role="presentation"
-    >
-      <a href={s.url} target="_blank" rel="noopener">
-        <LazyLoad height={s.height}>
-          <img className="img-responsive sponsors__logo" src={s.img} style={{ maxHeight: s.height }} alt={s.title} />
-        </LazyLoad>
-      </a>
-    </div>
-  ));
-
-  return (
-    <div className="row center-xs sponsors">
-      <div className="col-xs-10 pt-small pb-small bb">
-        <div className="row start-xs start-xs pb">
-          <div className="col-xs-12 col-sm-3 col-lg-2 end-sm">
-            <p style={{ textAlign: 'left', padding: '10px 0' }}>Main sponsor</p>
-          </div>
-          <div className="col-xs">
-            <div className="row start-xs middle-xs">
-              <div className="col-xs-4 col-sm-3 center-xs pb-xs sponsors__single" role="presentation">
-                <a href="https://www.blacktowerfm.com/locations/the-netherlands" target="_blank" rel="noopener">
-                  <LazyLoad height="100">
-                    <img className="img-responsive sponsors__logo" src="../static/img/meetup/sponsors/blacktower.png" style={{ maxHeight: "100px" }} alt="Blacktower financial management group" />
-                  </LazyLoad>
-                </a>
-              </div>
+export const SponsorsInfo = ({ t }) =>
+    <div className="row center-xs pt-large pb">
+        <div className="col-xs-10 start-xs exchanges bb">
+            <div className="start-sm pb-small">
+                <h2>
+                    {t('home:sponsors.intro', {
+                        defaultValue: 'Mission Supporters',
+                    })}
+                </h2>
+                <h4>{t('home:sponsors.subintro', {
+                    defaultValue: 'The following companies and/or individuals have donated a noteworthy amount of money or services to the Verge team because they believe in our vision.',
+                })}
+                </h4>
             </div>
-          </div>
-        </div>
-        <div className="row start-xs start-xs">
-          <div className="col-xs-12 col-sm-3 col-lg-2 end-sm">
-            <p style={{ textAlign: 'left', padding: '20px 0' }}>Event sponsors</p>
-          </div>
-
-          <div className="col-xs">
-            <div className="row center-xs middle-xs">
-              {Sponsors}
+            <div className="partners-grid">
+                {
+                    sponsors.map(({ href, alt, logo }) => {
+                        return (<div>
+                            <a href={href}>
+                                <img src={logo} alt={alt} />
+                            </a>
+                        </div>)
+                    })
+                }
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  );
-};
